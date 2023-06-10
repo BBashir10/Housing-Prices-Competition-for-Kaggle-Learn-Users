@@ -5,7 +5,7 @@ from sklearn.metrics import mean_absolute_error
 from sklearn.model_selection import train_test_split
 
 # Load the data, and separate the target
-iowa_file_path = './train.csv'
+iowa_file_path = '/Users/bennettbashir/Documents/Kaggle/Competitions/Housing Prices Competition for Kaggle Learn Users/Housing-Prices-Competition-for-Kaggle-Learn-Users/train.csv'
 home_data = pd.read_csv(iowa_file_path)
 y = home_data.SalePrice
 
@@ -34,7 +34,7 @@ rf_model_on_full_data = RandomForestRegressor(random_state=1)
 rf_model_on_full_data.fit(X, y)
 
 # path to file you will use for predictions
-test_data_path = 'test.csv'
+test_data_path = '/Users/bennettbashir/Documents/Kaggle/Competitions/Housing Prices Competition for Kaggle Learn Users/Housing-Prices-Competition-for-Kaggle-Learn-Users/test.csv'
 
 # read test data file using pandas
 test_data = pd.read_csv(test_data_path)
